@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krux Works | Mumbai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body id="overflowedit">
+    <div class="login-title">
+        <h1>Say Hello</h1>
+        <h2>We are always ready to serve you!</h2>
+    </div>
+    <!-- <div class="form-box">-->
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Sign In</button>
+        <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+    </div>
+
+    <!--</div>-->
+    <div class="login-form">
+        <form id="login" method="POST" action="login.php">
+            <input name="username" type="text" class="login-control" placeholder="Username or Email" required>
+            <br>
+            <input name="password" type="password" class="login-control" placeholder="Password" required>
+            <br>
+            <input type="checkbox" class="check-box" value=""><span>Remember me</span>
+            <br>
+            <input type="submit" class="login-control submit" value="Log In">
+        </form>
+        <form id="signup" method="POST" action="signup.php">
+            <input name="fname" type="text" class="login-control2 " placeholder="Enter Your First Name" required>
+            <input name="lname" type="text" class="login-control2 " placeholder="Enter Your Last Name" required>
+            <br>
+            <input name="phno" type="tel" class="login-control" placeholder="Enter your Phone number" required>
+            <br>
+            <input name="email" type="email" class="login-control" placeholder="Enter your email" required>
+            <br>
+            <input name="password" type="password" class="login-control2" placeholder="Password" required>
+            <input name="cpassword" type="password" class="login-control2" placeholder=" Confirm Password" required>
+            <br>
+            <div class="squaredFour"></div>
+            <input type="checkbox" class="check-box2" required><span>I agree to the <a href="tandc.html">terms </a>and <a href="conditions.html">conditions</a></span>
+            <br>
+            <!--<div class="g-recaptcha" data-sitekey="6Lfx6cYZAAAAAAe7Nad0ucjxAo7bjiB2Z-YO7k2-"></div>      -->
+            <input type="submit" class="login-control submit" value="Register">
+        </form>
+    </div>
+    <br>
+
+    <script src="/assets/js/login.js"></script>
+</body>
+
+</html>
